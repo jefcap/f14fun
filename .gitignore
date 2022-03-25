@@ -1,123 +1,123 @@
 # Code from https://github.com/facebook/react-native
 # Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-project.xcworkspace
+f14Fun/!**/*.xcodeproj
+f14Fun/!**/*.pbxproj
+f14Fun/!**/*.xcworkspacedata
+f14Fun/!**/*.xcsettings
+f14Fun/!**/*.xcscheme
+f14Fun/*.pbxuser
+f14Fun/!default.pbxuser
+f14Fun/*.mode1v3
+f14Fun/!default.mode1v3
+f14Fun/*.mode2v3
+f14Fun/!default.mode2v3
+f14Fun/*.perspectivev3
+f14Fun/!default.perspectivev3
+f14Fun/xcuserdata
+f14Fun/*.xccheckout
+f14Fun/*.moved-aside
+f14Fun/DerivedData
+f14Fun/*.hmap
+f14Fun/*.ipa
+f14Fun/*.xcuserstate
+f14Fun/project.xcworkspace
 
 # Gradle
-/build/
-/packages/react-native-gradle-plugin/build/
-/packages/rn-tester/build
-/packages/rn-tester/android/app/.cxx/
-/packages/rn-tester/android/app/build/
-/packages/rn-tester/android/app/gradle/
-/packages/rn-tester/android/app/gradlew
-/packages/rn-tester/android/app/gradlew.bat
-/ReactAndroid/build/
-/ReactAndroid/.cxx/
-/ReactAndroid/gradle/
-/ReactAndroid/gradlew
-/ReactAndroid/gradlew.bat
-/ReactAndroid/hermes-engine/build/
-/ReactAndroid/hermes-engine/.cxx/
-/template/android/app/build/
-/template/android/build/
+f14Fun/build/
+f14Fun/packages/react-native-gradle-plugin/build/
+f14Fun/packages/rn-tester/build
+f14Fun/packages/rn-tester/android/app/.cxx/
+f14Fun/packages/rn-tester/android/app/build/
+f14Fun/packages/rn-tester/android/app/gradle/
+f14Fun/packages/rn-tester/android/app/gradlew
+f14Fun/packages/rn-tester/android/app/gradlew.bat
+f14Fun/ReactAndroid/build/
+f14Fun/ReactAndroid/.cxx/
+f14Fun/ReactAndroid/gradle/
+f14Fun/ReactAndroid/gradlew
+f14Fun/ReactAndroid/gradlew.bat
+f14Fun/ReactAndroid/hermes-engine/build/
+f14Fun/ReactAndroid/hermes-engine/.cxx/
+f14Fun/template/android/app/build/
+f14Fun/template/android/build/
 
 # Buck
-.buckd
-buck-out
-/.lsp.buckd
-/.lsp-buck-out
-/ReactAndroid/src/main/jni/prebuilt/lib/
-/ReactAndroid/src/main/gen
+f14Fun/.buckd
+f14Fun/buck-out
+f14Fun/.lsp.buckd
+f14Fun/.lsp-buck-out
+f14Fun/ReactAndroid/src/main/jni/prebuilt/lib/
+f14Fun/ReactAndroid/src/main/gen
 
 # Android Studio
-.project
-.settings
-.classpath
+f14Fun/.project
+f14Fun/.settings
+f14Fun/.classpath
 
 # Watchman
-.watchmanconfig
+f14Fun/.watchmanconfig
 
 # Android
-.idea
-.gradle
-local.properties
-*.iml
-/android/
+f14Fun/.idea
+f14Fun/.gradle
+f14Fun/local.properties
+f14Fun/*.iml
+f14Fun/android/
 
 # Node
-node_modules
-*.log
-.nvm
-/bots/node_modules/
-package-lock.json
+f14Fun/node_modules
+f14Fun/*.log
+f14Fun/.nvm
+f14Fun/bots/node_modules/
+f14Fun/package-lock.json
 
 # OS X
-.DS_Store
+f14Fun/.DS_Store
 
 # Test generated files
-/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
-*.js.meta
+f14Fun/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+f14Fun/*.js.meta
 
 /coverage
 /third-party
 
 # Root dir shouldn't have Xcode project
-/*.xcodeproj
+f14Fun/*.xcodeproj
 
 # ReactCommon subdir shouldn't have Xcode project
-/ReactCommon/**/*.xcodeproj
+f14Fun/ReactCommon/**/*.xcodeproj
 
 # Libs that shouldn't have Xcode project
-/Libraries/FBLazyVector/**/*.xcodeproj
-/Libraries/RCTRequired/**/*.xcodeproj
-/React/CoreModules/**/*.xcodeproj
-/React/FBReactNativeSpec/**/*.xcodeproj
-/packages/react-native-codegen/**/*.xcodeproj
+f14Fun/Libraries/FBLazyVector/**/*.xcodeproj
+f14Fun/Libraries/RCTRequired/**/*.xcodeproj
+f14Fun/React/CoreModules/**/*.xcodeproj
+f14Fun/React/FBReactNativeSpec/**/*.xcodeproj
+f14Fun/packages/react-native-codegen/**/*.xcodeproj
 
 # Ruby Gems (Bundler)
-/vendor
-/template/vendor
+f14Fun/vendor
+f14Fun/template/vendor
 
 # iOS / CocoaPods
-/template/ios/build/
-/template/ios/Pods/
-/template/ios/Podfile.lock
-/packages/rn-tester/Gemfile.lock
+f14Fun/template/ios/build/
+f14Fun/template/ios/Pods/
+f14Fun/template/ios/Podfile.lock
+f14Fun/packages/rn-tester/Gemfile.lock
 
 # Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
-/packages/rn-tester/Pods/*
+f14Fun/packages/rn-tester/Pods/*
 !/packages/rn-tester/Pods/__offline_mirrors__
 
 # react-native-codegen
-/React/FBReactNativeSpec/FBReactNativeSpec
-/packages/react-native-codegen/lib
-/ReactCommon/react/renderer/components/rncore/
-/packages/rn-tester/NativeModuleExample/ScreenshotManagerSpec*
+f14Fun/React/FBReactNativeSpec/FBReactNativeSpec
+f14Fun/packages/react-native-codegen/lib
+f14Fun/ReactCommon/react/renderer/components/rncore/
+f14Fun/packages/rn-tester/NativeModuleExample/ScreenshotManagerSpec*
 
 # Additional SDKs
-/sdks/.hermesversion
-/sdks/hermes
-/sdks/download
+f14Fun/sdks/.hermesversion
+f14Fun/sdks/hermes
+f14Fun/sdks/download
 
 # Visual studio
 .vscode
