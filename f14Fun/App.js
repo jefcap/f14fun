@@ -1,13 +1,10 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import MyStack from './src/screens/MyStack';
 
-export default class App extends React.Component {
+const App = () => {
+  return (
+    <MyStack/>
+  );
+};
 
-  render() {
-    return (
-      <View>
-        <Text>{`Hello World!!!`}</Text>
-      </View>
-    );
-  }
-}
+export default App;
