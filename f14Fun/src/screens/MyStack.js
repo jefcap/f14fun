@@ -6,6 +6,9 @@ import Circuits from './Circuits';
 import Drivers from './Drivers';
 import Home from './Home';
 import Login from './Login';
+import DriverDetails from './DriverDetails';
+import CircuitDetails from './CircuitDetails';
+import CalendarDetails from './CalendarDetails';
 
 // Reference:
 // https://reactnavigation.org/docs/hello-react-navigation/
@@ -28,6 +31,9 @@ const MyStack = () => {
                 <Stack.Screen name="Drivers" component={Drivers} />
                 <Stack.Screen name="Circuits" component={Circuits} />
                 <Stack.Screen name="Calendar" component={Calendar} />
+                <Stack.Screen name="DriverDetails" component={DriverDetails}/>
+                <Stack.Screen name="CircuitDetails" component={CircuitDetails}/>
+                <Stack.Screen name="CalendarDetails" component={CalendarDetails}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
