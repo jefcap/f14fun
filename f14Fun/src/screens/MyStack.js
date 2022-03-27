@@ -25,12 +25,12 @@ const MyStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                {/* <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/> */}
-                <Stack.Screen name="Login" component={Login} />
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Drivers" component={Drivers} />
-                <Stack.Screen name="Circuits" component={Circuits} />
-                <Stack.Screen name="Calendar" component={Calendar} />
+                <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+                {/* <Stack.Screen name="Login" component={Login} /> */}
+                <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+                <Stack.Screen name="Drivers" component={Drivers} options={{headerShown: false}} />
+                <Stack.Screen name="Circuits" component={Circuits} options={{headerShown: false}} />
+                <Stack.Screen name="Calendar" component={Calendar} options={{headerShown: false}} />
                 <Stack.Screen name="DriverDetails" component={DriverDetails}/>
                 <Stack.Screen name="CircuitDetails" component={CircuitDetails}/>
                 <Stack.Screen name="CalendarDetails" component={CalendarDetails}/>

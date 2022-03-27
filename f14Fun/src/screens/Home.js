@@ -12,22 +12,18 @@ export default class Home extends React.Component {
 
     goToDrivers = () => {
         this.props.navigation.navigate('Drivers', { screen: 'Drivers' });
-        console.warn('Navigate to to Drivers');
     };
 
     goToCircuits = () => {
         this.props.navigation.navigate('Circuits', { screen: 'Circuits' });
-        console.warn('Navigate to to Circuits');
     };
 
     goToCalendar = () => {
         this.props.navigation.navigate('Calendar', { screen: 'Calendar' });
-        console.warn('Navigate to to Calendar');
     };
 
     goToLogin = () => {
         this.props.navigation.navigate('Login', { screen: 'Login' });
-        console.warn('Navigate to to Login');
     };
 
     render() {
