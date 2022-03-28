@@ -24,19 +24,43 @@ export default class Login extends React.Component {
         this.props.navigation.navigate('Home', { screen: 'Home' });
     };
 
+    // Email validation from: https://www.w3resource.com/javascript/form/email-validation.php
+    ValidateEmail = (mail) => {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (mail.match(mailformat)){
+            return (true)
+        }
+        return (false)
+    }
+
     checkCredentials = () => {
         console.log("checkCredentials: state.email", this.state.email)
         console.log("checkCredentials: state.password", this.state.password)
 
-        if (this.state.email === validEmail) {
-            if (this.state.password === validPwd) {
-                this.goToHome()
-                this.state.credentialsOK = true
-            }
+        if (!!!this.state.email) {
+            Alert.alert("E-mail is empty")
         }
+        else if (!this.ValidateEmail(this.state.email)) {
+            Alert.alert("You have entered an invalid email address!")
+        }
+        else if (!!!this.state.password) {
+            Alert.alert("Password is empty")
+        }
+        else if (this.state.password.length < 4) {
+            Alert.alert("Password too short")
+        }
+        else {
 
-        if (this.state.credentialsOK === false) {
-            Alert.alert("E-mail or password incorrect")
+            if (this.state.email === validEmail) {
+                if (this.state.password === validPwd) {
+                    this.goToHome()
+                    this.state.credentialsOK = true
+                }
+            }
+
+            if (this.state.credentialsOK === false) {
+                Alert.alert("E-mail or password incorrect")
+            }
         }
     }
 
