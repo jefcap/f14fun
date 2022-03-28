@@ -22,8 +22,16 @@ export default class CalendarDetails extends React.Component {
                     <Text style={styles.bodyStyle}>{`Round: ${item.round}`}</Text>
                     <Text style={styles.bodyStyle}>{`More info: `}</Text>
                     <Text style={styles.urlStyle} onPress={() => Linking.openURL(item.url)}>{`${item.url}\n`}</Text>
+                    {/* There are races that have sprint, and others have ThirdPractice.*/}
+                    {item.Sprint ?
+                        (<Text style={styles.bodyStyle}>{`Sprint: ${item.Sprint.date} @ ${item.Sprint.time} `}</Text>) :
+                        <View />
+                    }
                     <Text style={styles.bodyStyle}>{`Quali: ${item.Qualifying.date} @ ${item.Qualifying.time} `}</Text>
-                    <Text style={styles.bodyStyle}>{`FP3: ${item.ThirdPractice.date} @ ${item.ThirdPractice.time} `}</Text>
+                    {item.ThirdPractice ?
+                        (<Text style={styles.bodyStyle}>{`FP3: ${item.ThirdPractice.date} @ ${item.ThirdPractice.time} `}</Text>) :
+                        <View />
+                    }
                     <Text style={styles.bodyStyle}>{`FP2: ${item.SecondPractice.date} @ ${item.SecondPractice.time} `}</Text>
                     <Text style={styles.bodyStyle}>{`FP1: ${item.FirstPractice.date} @ ${item.FirstPractice.time} `}</Text>
                 </View>
