@@ -58,7 +58,7 @@ export default class Home extends React.Component {
                             <AnimButtonNavigate title="Go to Calendar" screen="Calendar" navigation={this.props.navigation} />
                         </View>
                         <View style={styles.logoutButtonView}>
-                            <AnimButtonNavigate title="Logout" screen="Login" navigation={this.props.navigation} />
+                            <AnimButtonNavigate title=" Logout " screen="Login" navigation={this.props.navigation} />
                         </View>
                     </View>
                 </ImageBackground>

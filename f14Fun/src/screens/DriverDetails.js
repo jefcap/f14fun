@@ -29,7 +29,7 @@ export default class DriverDetails extends React.Component {
                     <Text style={styles.bodyStyle}>{`Nationality: ${item.nationality}`}</Text>
                     <Text/>
                     <Text style={styles.bodyStyle}>{`More info:`}</Text>
-                    <Text style={styles.urlStyle} onPress={() => Linking.openURL(item.url)}>{`Books: ${item.url}`}</Text>
+                    <Text style={styles.urlStyle} onPress={() => Linking.openURL(item.url)}>{`${item.url}`}</Text>
                 </View>
                 <View style={styles.driverStyle}>
                     <Image  source={driverThumbIndex[item.driverId]} />
