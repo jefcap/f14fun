@@ -787,7 +787,6 @@ export default class Calendar extends React.Component {
 
     goToHome = () => {
         this.props.navigation.navigate('Home', { screen: 'Home' });
-        console.warn('Navigate to to home');
     };
 
     render() {
