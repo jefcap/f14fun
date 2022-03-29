@@ -27,10 +27,12 @@ export default class DriverDetails extends React.Component {
                     <Text style={styles.bodyStyle}>{`Code: ${item.code}`}</Text>
                     <Text style={styles.bodyStyle}>{`Date of Birth: ${item.dateOfBirth}`}</Text>
                     <Text style={styles.bodyStyle}>{`Nationality: ${item.nationality}`}</Text>
+                    <Text/>
+                    <Text style={styles.bodyStyle}>{`More info:`}</Text>
                     <Text style={styles.urlStyle} onPress={() => Linking.openURL(item.url)}>{`Books: ${item.url}`}</Text>
                 </View>
-                <View>
-                    <Image source={driverThumbIndex[item.driverId]} />
+                <View style={styles.driverStyle}>
+                    <Image  source={driverThumbIndex[item.driverId]} />
                 </View>
             </ImageBackground>
         )
@@ -40,19 +42,27 @@ export default class DriverDetails extends React.Component {
 const styles = StyleSheet.create(
     {
         mainTheme: {
-            backgroundColor: 'aquamarine',
-            justifyContent: 'center',
-            margin: 4,
-            borderBottomColor: 'black',
-            borderWidth: 2,
+            borderColor: '#777777',
+            borderWidth: 3,
+            borderRadius: 16,
+            marginVertical: 8,
+            // marginHorizontal: 8,
+            backgroundColor: 'rgba(255,255,255,0.8)',
+            // #FF1801
+
+        },
+        imageBackground: {
+            height: screenSizeHeight,
+            padding: 32,
         },
         headerStyle: {
             fontSize: 24,
+            color: 'black',
             fontWeight: 'bold',
             textAlign: "center",
         },
         bodyStyle: {
-            fontSize: 16,
+            fontSize: 20,
             color: 'black',
             textAlign: 'left',
         },
@@ -61,9 +71,10 @@ const styles = StyleSheet.create(
             color: 'blue',
             textAlign: "left",
         },
-        imageBackground: {
-            height: screenSizeHeight,
-            padding: 32,
+        driverStyle: {
+            // borderColor: '#777777',
+            // borderWidth: 3,
+            alignItems: 'center'
         },
     }
 )

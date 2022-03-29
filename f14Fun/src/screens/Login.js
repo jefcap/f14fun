@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Alert, Button, Dimensions, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import AnimButtonNavigate from '../components/AnimButtonNavigate';
+import LoginButton from '../components/LoginButton';
 
 const imageurl = require("../assets/images/background/Logo-F1.jpg");
 const screenSizeHeight = Dimensions.get('window').height
@@ -27,7 +29,7 @@ export default class Login extends React.Component {
     // Email validation from: https://www.w3resource.com/javascript/form/email-validation.php
     ValidateEmail = (mail) => {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (mail.match(mailformat)){
+        if (mail.match(mailformat)) {
             return (true)
         }
         return (false)
@@ -127,14 +129,22 @@ export default class Login extends React.Component {
                             />
                         </View>
 
-                        <Button
-                            title="Login"
-                            onPress={() => this.checkCredentials()}
-                        />
-                        <Button
-                            title="Help"
-                            onPress={() => Alert.alert(`E-mail: ${validEmail} \nPassword: ${validPwd}`)}
-                        />
+                        <View style={styles.buttonView}>
+                            <Button
+                                title="Login"
+                                onPress={() => this.checkCredentials()}
+                            // bypass checkCredentials
+                            // onPress={() => this.goToHome()}   
+                            />
+                        </View>
+                        {/* TODO: Customize login button (maybe) */}
+                        {/* <LoginButton title="Login" screen="Login" navigation={this.props.navigation} /> */}
+                        <View style={styles.buttonView}>
+                            <Button
+                                title="Help"
+                                onPress={() => Alert.alert(`E-mail: ${validEmail} \nPassword: ${validPwd}`)}
+                            />
+                        </View>
 
 
                     </View>
@@ -166,6 +176,9 @@ const styles = StyleSheet.create(
         },
         textInputView: {
             flex: 0.7,
+        },
+        buttonView: {
+            padding: 8,
         },
         textInput: {
             borderColor: '#777777',

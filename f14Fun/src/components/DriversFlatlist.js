@@ -35,8 +35,8 @@ export default class DriversFlatlist extends React.Component {
                     <Text style={styles.textDescription}>
                         {`#${item.permanentNumber}`}
                     </Text>
-                    <Text style={styles.priceDescription}>
-                        {`From: ${item.nationality}`}
+                    <Text style={styles.textNationality}>
+                        {`NAT: ${item.nationality}`}
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -57,29 +57,30 @@ export default class DriversFlatlist extends React.Component {
 const styles = StyleSheet.create(
     {
         mainTheme: {
-            backgroundColor: 'aquamarine',
-            height: 90,
-            justifyContent: 'center',
-            // alignItems: 'center',
-            backgroundColor: 'darkgray',
-            margin: 4,
-            borderBottomColor: 'black',
-            borderWidth: 2,
+            borderColor: '#777777',
+            borderWidth: 3,
+            borderRadius: 16,
+            marginVertical: 8,
+            marginHorizontal: 8,
+            backgroundColor: 'rgba(255,255,255,0.7)',
+            // #FF1801
 
         },
         textHeader: {
             fontSize: 24,
+            color: 'black',
             fontWeight: 'bold',
         },
         textDescription: {
-            fontSize: 16,
+            fontSize: 20,
             color: 'black',
             textAlign: "left",
         },
-        priceDescription: {
-            fontSize: 16,
+        textNationality: {
+            fontSize: 20,
             color: 'red',
             textAlign: "right",
+            padding: 10
         },
     }
 )

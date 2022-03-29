@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Dimensions, ImageBackground, Linking, StyleSheet, Text, View } from 'react-native';
 
-const image = { uri: "https://www.sportsnet.ca/wp-content/uploads/2022/03/F1-1040x572.jpg" };
+const image = { uri: "https://motorsporttickets.com/blog/wp-content/uploads/2020/09/F1-desktop-80-1-1024x576.jpg" };
 const screenSizeHeight = Dimensions.get('window').height
 const screenSizeWidth = Dimensions.get('window').width
 
@@ -72,11 +72,14 @@ export default class CalendarDetails extends React.Component {
 const styles = StyleSheet.create(
     {
         mainTheme: {
-            backgroundColor: 'aquamarine',
-            justifyContent: 'center',
-            margin: 4,
-            borderBottomColor: 'black',
-            borderWidth: 2,
+            borderColor: '#777777',
+            borderWidth: 3,
+            borderRadius: 16,
+            marginVertical: 8,
+            // marginHorizontal: 2,
+            backgroundColor: 'rgba(255,255,255,0.9)',
+            // #FF1801
+
         },
         headerStyle: {
             fontSize: 24,
